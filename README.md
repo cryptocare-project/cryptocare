@@ -4,22 +4,24 @@ Cryptocare integration/staging tree
 http://www.cryptocare.org
 
 Copyright (c) 2009-2014 Bitcoin Developers
-Copyright (c) 2011-2014 Cryptocare Developers
+Copyright (c) 2011-2014 Litecoin Developers
+Copyright (c) 2018 Litecoin Developers
+
 
 What is Cryptocare?
 ----------------
 
 Cryptocare is a lite version of Bitcoin using scrypt as a proof-of-work algorithm.
  - 2.5 minute block targets
- - subsidy halves in 840k blocks (~4 years)
- - ~84 million total coins
+ - subsidy halves in 840960 blocks (~4 years)
+ - ~90 billion total coins
 
 The rest is the same as Bitcoin.
- - 50 coins per block
+ - 447565 coins per block
  - 2016 blocks to retarget difficulty
 
 For more information, as well as an immediately useable, binary version of
-the Cryptocare client sofware, see http://www.cryptocare.org.
+the Cryptocare client sofware, see http://www.cryptocare.in.
 
 License
 -------
