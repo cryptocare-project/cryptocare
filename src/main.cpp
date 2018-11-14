@@ -35,7 +35,7 @@ CTxMemPool mempool;
 unsigned int nTransactionsUpdated = 0;
 
 map<uint256, CBlockIndex*> mapBlockIndex;
-uint256 hashGenesisBlock("0x");
+uint256 hashGenesisBlock("0x7619b8e3cb2bae0383292ee667648e55a8cd17e9e962989ee9083daf6b303aeb");
 static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // Cryptocare: starting difficulty is 1 / 2^12
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
@@ -2746,7 +2746,7 @@ bool LoadBlockIndex()
         pchMessageStart[1] = 0xf1;
         pchMessageStart[2] = 0xde;
         pchMessageStart[3] = 0xb8;
-        hashGenesisBlock = uint256("0x");
+        hashGenesisBlock = uint256("0x778f36b4619e135d042795107c84be87b5abba24c77e8c462e0f510901cb6794");
     }
 
     //
@@ -2779,26 +2779,26 @@ bool InitBlockIndex() {
         //   vMerkleTree: 97ddfbbae6
 
         // Genesis block
-        const char* pszTimestamp = "26 people killed in Burundi terrorist attack on 12/May/18";
+        const char* pszTimestamp = "Childrens' Day is being celebrated in schools on 14/Nov/2014";
         CTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 486604799 << CBigNum(4) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
         txNew.vout[0].nValue = 47565 * COIN;
-        txNew.vout[0].scriptPubKey = CScript() << ParseHex("0413f43f1f26959b8f2ce0d18a9dcbe73853defc05c60b3a27489eced1ff245fd5a619132060c69aff86dff45d3c919853fc8aaa8b01307529518773e347f73f9d") << OP_CHECKSIG;
+        txNew.vout[0].scriptPubKey = CScript() << ParseHex("04c68267bf0c8401825bca29ce1f8e0c1c708cb65a58274229aefebdb2403a28214b44837cfc869871c5be7a06cba3abd4c87175a2324a817aca38a86b1a385e39") << OP_CHECKSIG;
         CBlock block;
         block.vtx.push_back(txNew);
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1526148814;
+        block.nTime    = 1542186192;
         block.nBits    = 0x1e0ffff0;
-        block.nNonce   = 2084524493;
+        block.nNonce   = 2085925958;
 
         if (fTestNet)
         {
-            block.nTime    = 1526148798;
-            block.nNonce   = 385270584;
+            block.nTime    = 1542186166;
+            block.nNonce   = 385797057;
         }
 
         //// debug print
@@ -2806,7 +2806,7 @@ bool InitBlockIndex() {
         printf("%s\n", hash.ToString().c_str());
         printf("%s\n", hashGenesisBlock.ToString().c_str());
         printf("%s\n", block.hashMerkleRoot.ToString().c_str());
-        assert(block.hashMerkleRoot == uint256(""));
+        assert(block.hashMerkleRoot == uint256("0x068bfecd28e9b66fcedbbff6d46a191acfb1523b60d09aa8ba24e99bbeffe685"));
         block.print();
         assert(hash == hashGenesisBlock);
 
