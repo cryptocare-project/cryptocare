@@ -14,6 +14,7 @@ Cryptocare is a lite version of Bitcoin using scrypt as a proof-of-work algorith
  - 2.5 minute block targets
  - subsidy halves in 840960 blocks (~4 years)
  - ~90 billion total coins
+ - 47565 coins per block
 
 For more information, as well as an immediately useable, binary version of
 the Cryptocare client sofware, see http://www.cryptocare.in.
