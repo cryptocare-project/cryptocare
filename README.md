@@ -12,14 +12,13 @@ What is Cryptocare?
 Cryptocare is a lite version of Bitcoin using scrypt as a proof-of-work algorithm.
  - 2.5 minute block targets
  - subsidy halves in 840k blocks (~4 years)
- - ~84 million total coins
+ - ~90 billion total coins
 
-The rest is the same as Bitcoin.
- - 50 coins per block
- - 2016 blocks to retarget difficulty
+ - 47565 coins per block
+
 
 For more information, as well as an immediately useable, binary version of
-the Cryptocare client sofware, see http://www.cryptocare.org.
+the Cryptocare client sofware, see http://www.cryptocare.in.
 
 License
 -------
@@ -44,9 +43,6 @@ Developers should expect to rework and resubmit patches if the code doesn't
 match the project's coding conventions (see `doc/coding.txt`) or are
 controversial.
 
-The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/cryptocare-project/cryptocare/tags) are created
-regularly to indicate new official, stable release versions of Cryptocare.
 
 Testing
 -------
@@ -70,4 +66,6 @@ Unit tests for the GUI code are in `src/qt/test/`. To compile and run them:
     qmake BITCOIN_QT_TEST=1 -o Makefile.test bitcoin-qt.pro
     make -f Makefile.test
     ./cryptocare-qt_test
+
+## Currently this version of cryptocare can be run only on linux.
 
